@@ -106,9 +106,7 @@ const cart = {
         } else if (order.toLowerCase() === "d") {
           return this.ord_alf_rev(prop);
         } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
+          return "Valor de crescente ou decrescente informado incorretamente!";
         }
       } else if (prop === "category") {
         if (order.toLowerCase() === "c") {
@@ -116,9 +114,7 @@ const cart = {
         } else if (order.toLowerCase() === "d") {
           return this.ord_alf_rev(prop);
         } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
+          return "Valor de crescente ou decrescente informado incorretamente!";
         }
       } else if (prop === "storage") {
         if (order.toLowerCase() === "c") {
@@ -126,9 +122,7 @@ const cart = {
         } else if (order.toLowerCase() === "d") {
           return this.decres(prop);
         } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
+          return "Valor de crescente ou decrescente informado incorretamente!";
         }
       } else if (prop === "ram") {
         if (order.toLowerCase() === "c") {
@@ -136,19 +130,7 @@ const cart = {
         } else if (order.toLowerCase() === "d") {
           return this.decres(prop);
         } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
-        }
-      } else if (prop === "ram") {
-        if (order.toLowerCase() === "c") {
-          return this.cresc(prop);
-        } else if (order.toLowerCase() === "d") {
-          return this.decres(prop);
-        } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
+          return "Valor de crescente ou decrescente informado incorretamente!";
         }
       } else if (prop === "price") {
         if (order.toLowerCase() === "c") {
@@ -156,9 +138,7 @@ const cart = {
         } else if (order.toLowerCase() === "d") {
           return this.decres(prop);
         } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
+          return "Valor de crescente ou decrescente informado incorretamente!";
         }
       } else if (prop === "qtt") {
         if (order.toLowerCase() === "c") {
@@ -166,36 +146,15 @@ const cart = {
         } else if (order.toLowerCase() === "d") {
           return this.decres(prop);
         } else {
-          console.log(
-            "Valor de crescente ou decrescente informado incorretamente!"
-          );
+          return "Valor de crescente ou decrescente informado incorretamente!";
         }
       } else {
-        console.log("Propriedade inexistente");
+        return "Propriedade inexistente;";
       }
     } else {
-      console.log(
-        "Propriedade informada incorretamente, tente usando:\n product\nstorage\nram\nprice\nqtt\ncategory"
-      );
+      return "Propriedade informada incorretamente, tente usando:\n product\nstorage\nram\nprice\nqtt\ncategory";
     }
   },
 };
 
-// console.log(cart.calcularTotal());
-// console.log("\n")
-
-// console.log(cart.filtrarPorCategoria("Watch"));
-// console.log("\n")
-
-// console.log(cart.cresc());
-// console.log("\n")
-
-// console.log(cart.decres());
-// console.log("\n")
-
-// console.log(cart.ord_alf());
-// console.log("\n")
-
-// console.log(cart.ord_alf_rev());
-
-console.log(cart.ordenar("qtt", "c"));
+console.log(cart.ordenar("product"));
